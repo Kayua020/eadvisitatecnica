@@ -1,0 +1,113 @@
+/* Define a aparência geral da página: fonte, cores e remove a margem padrão. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef3f8;
+    color: #243247;
+    line-height: 1.6;
+}
+
+/* Estiliza o cabeçalho e o título principal. */
+header {
+    background-color: #12345a;
+    color: white;
+    text-align: center;
+    padding: 28px 16px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.subtitulo {
+    margin: 8px 0 0;
+    color: #d8e8ff;
+    font-size: 1.1rem;
+}
+
+/* Limita a largura do conteúdo e centraliza as seções. */
+main {
+    width: min(900px, 92%);
+    margin: 28px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 22px;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(18, 52, 90, 0.09);
+}
+
+/* Define a cor dos subtítulos. */
+h2 {
+    color: #1769aa;
+    margin-top: 0;
+}
+
+/* Faz a imagem ocupar a largura disponível sem distorcer. */
+.imagem-tecnologia {
+    display: block;
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+/* Aumenta o espaço entre os itens da lista. */
+li {
+    margin-bottom: 8px;
+}
+
+/* Personaliza o botão para destacá-lo e indicar que pode ser clicado. */
+button {
+    background-color: #087f5b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+/* Muda a cor do botão quando o cursor passa por cima. */
+button:hover {
+    background-color: #056344;
+    transform: translateY(-2px);
+}
+
+/* Destaca a mensagem alterada pelo JavaScript. */
+#mensagem {
+    padding: 12px;
+    background-color: #e8f5ef;
+    border-left: 4px solid #087f5b;
+    border-radius: 4px;
+}
+
+/* Estiliza o rodapé da página. */
+footer {
+    background-color: #dbe5ef;
+    color: #34465c;
+    text-align: center;
+    padding: 16px;
+    font-size: 0.9rem;
+}
+
+/* Ajusta o tamanho do título em telas pequenas. */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    section {
+        padding: 16px;
+    }
+}
